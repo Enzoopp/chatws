@@ -1,3 +1,13 @@
 spring:
   application:
     name: chatws
+
+# Credenciales de ejemplo exclusivamente para desarrollo local.
+chat:
+  relay:
+    host: ${RELAY_HOST:localhost}
+    port: ${RELAY_PORT:61613}
+    client-login: ${RELAY_CLIENT_LOGIN:chat}
+    client-passcode: ${RELAY_CLIENT_PASSCODE:chat-local}
+    system-login: ${RELAY_SYSTEM_LOGIN:chat}
+    system-passcode: ${RELAY_SYSTEM_PASSCODE:chat-local}
